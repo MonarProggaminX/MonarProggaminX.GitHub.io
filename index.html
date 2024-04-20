@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoXcel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="https://w7.pngwing.com/pngs/555/969/png-transparent-samurai-kanji-japanese-decal-f%C5%ABrinkazan-samurai-x-flag-poster-logo-thumbnail.png">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/foto-gratis/resumen-denso-rosa-ondeando-niebla_23-2148101972.jpg?w=740&t=st=1713271900~exp=1713272500~hmac=0ded47855ff9faf09ef88431b0611000e2b4b52e9302ac55560ca1160f8ecaa5');
+            background-size: cover;
+            margin: 0; /* Eliminar el margen predeterminado */
+            padding: 0; /* Eliminar el relleno predeterminado */
+            font-family: Arial, sans-serif; /* Establecer una fuente predeterminada */
+        }
+
+        footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(87, 84, 84, 0.8); /* Color de fondo con transparencia */
+            padding: 10px 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+        }
+
+        /* Animación para la motocicleta */
+        @keyframes moveMoto {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(50px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .moto-animation {
+            animation: moveMoto 2s infinite;
+            position: absolute;
+            top: 50px;
+            left: 15px;
+        }
+
+        /* Estilos específicos para dispositivos móviles */
+        @media screen and (max-width: 600px) {
+            .moto-animation {
+                display: none; /* Ocultar la animación de la motocicleta en dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+
+<body class="asas">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#" onclick="openMap()">Ubicacion</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <img class="Logo"
+                    src="https://w7.pngwing.com/pngs/555/969/png-transparent-samurai-kanji-japanese-decal-f%C5%ABrinkazan-samurai-x-flag-poster-logo-thumbnail.png"
+                    alt="Logo de la empresa" width="70">
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <tr>
+            <td><img src="https://www.carroya.com/noticias/sites/default/files/motos_nuevas_bogota_carroya_.webp"
+                    alt=""></td>
+            <td>
+                <font color="black">
+                    <h1>MotoXcel</h1>En MotoXcel estamos dedicados a brindar la máxima excelencia <br>en el mundo de las
+                    motocicletas.
+                    Nuestra misión <br>es proporcionar a nuestros clientes productos de alta calidad que satisfagan sus
+                    necesidades de transporte y recreación, al tiempo que fomentamos una comunidad apasionada por la
+                    conducción segura y responsable. <br><br>
+                </font>
+                <button class="btn-17">
+                    <span class="text-container">
+                      <span class="text">Comprar</span>
+                    </span>
+                  </button>
+                  
+
+
+            </td>
+        </tr>
+    </table>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/YourPage" target="_blank"><img
+                    src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"></a>
+            <a href="https://twitter.com/YourPage" target="_blank"><img
+                    src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b?h=464"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com/YourPage" target="_blank"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                    alt="Instagram"></a>
+            <a href="https://www.autecomobility.com/YourPage" target="_blank"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Auteco_logo.svg/800px-Auteco_logo.svg.png"
+                    alt="Auteco_logo"></a>
+        </div>
+        <p>&copy; 2024 Your Company Monar_programming. All rights reserved.</p>
+
+    </footer>
+
+    <script>
+        let mapWindow;
+    
+        function openMap() {
+            mapWindow = window.open('https://maps.google.com', '_blank', 'width=600,height=400');
+        }
+    
+        function closeMap() {
+            if (mapWindow) {
+                mapWindow.close();
+            }
+        }
+    </script>
+    
+
+    <!-- Elemento de la motocicleta -->
+    <img class="moto-animation" src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Motocicleta"
+        width="20">
+</body>
+
+</html>
